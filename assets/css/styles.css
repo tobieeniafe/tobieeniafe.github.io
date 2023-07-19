@@ -3,6 +3,11 @@
     src: url('/assets/fonts/GothamRoundedBook.ttf');
 }
 
+@font-face {
+    font-family: 'Modeseven';
+    src: url('/assets/fonts/Modeseven.ttf');
+}
+
 html {
     box-sizing: border-box;
     width: 100%;
@@ -30,10 +35,9 @@ body {
 }
 
 * {
-    font-family: 'GothamRoundedBook', sans-serif;
+    font-family: 'Modeseven', sans-serif;
     font-weight: 300;
 }
-
 
 .case {
     position: absolute;
@@ -46,6 +50,8 @@ body {
 }
 
 .text {
+    font-family: 'GothamRoundedBook', sans-serif;
+    font-weight: 300;
     color: #fff;
     font-size: 6rem;
     font-weight: 200;
@@ -58,36 +64,48 @@ body {
     transform: translatez(0);
 }
 
-.text-t {
-    left: 1.7rem;
+/* .text-e {
+    left: 0.5rem;
     -webkit-transform: translate3d(0, -4rem, 0);
     transform: translate3d(0, -4rem, 0);
     -webkit-animation: text-t 1050ms ease-in infinite;
     animation: text-t 1050ms ease-in infinite;
+} */
+
+.text-e {
+    left: 4rem;
+    -webkit-animation-delay: 950ms;
+    animation-delay: 950ms;
 }
 
-.text-o {
-    left: 4.2rem;
-    -webkit-animation-delay: 150ms;
-    animation-delay: 150ms;
-}
-
-.text-b {
-    left: 7.7rem;
-    -webkit-animation-delay: 230ms;
-    animation-delay: 230ms;
+.text-n {
+    left: 7rem;
+    -webkit-animation-delay: 920ms;
+    animation-delay: 920ms;
 }
 
 .text-i {
-    left: 11.2rem;
-    -webkit-animation-delay: 310ms;
-    animation-delay: 310ms;
+    left: 10rem;
+    -webkit-animation-delay: 890ms;
+    animation-delay: 890ms;
 }
 
-.text-e {
-    left: 12.2rem;
-    -webkit-animation-delay: 390ms;
-    animation-delay: 390ms;
+.text-a {
+    left: 11rem;
+    -webkit-animation-delay: 860ms;
+    animation-delay: 860ms;
+}
+
+.text-f {
+    left: 14rem;
+    -webkit-animation-delay: 830ms;
+    animation-delay: 830ms;
+}
+
+.text-e2 {
+    left: 16rem;
+    -webkit-animation-delay: 800ms;
+    animation-delay: 800ms;
 }
 
 .coast {
@@ -97,8 +115,8 @@ body {
     width: 6.2rem;
     height: 2.2rem;
     display: inline-block;
-    -webkit-animation: coast 2100ms linear infinite;
-    animation: coast 2100ms linear infinite;
+    -webkit-animation: coast 1100ms linear infinite;
+    animation: coast 1100ms linear infinite;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
@@ -120,8 +138,8 @@ body {
     border-radius: 1.1rem;
     background: radial-gradient(ellipse at center, #6097d2 0%, #3371b2 73%, #265485 100%);
     display: inline-block;
-    -webkit-animation: wave 2100ms linear infinite;
-    animation: wave 2100ms linear infinite;
+    -webkit-animation: wave 1100ms linear infinite;
+    animation: wave 1100ms linear infinite;
     will-change: width;
     -webkit-transform: translateZ(0) scale(0);
     transform: translateZ(0) scale(0);
